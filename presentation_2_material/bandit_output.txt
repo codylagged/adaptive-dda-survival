@@ -1,0 +1,32 @@
+Sample-average update
+  start Q(medium)=0, N(medium)=0
+  after R=1.0: Q=1.0000 N=1  (0 + (1-0)/1 = 1)
+  after R=0.0: Q=0.5000 N=2  (1 + (0-1)/2 = 0.5)
+
+Exploitation (epsilon = 0) with Q(hard) highest
+  selections: hard/exploit, hard/exploit, hard/exploit, hard/exploit, hard/exploit, hard/exploit, hard/exploit, hard/exploit
+
+Exploration (epsilon = 1) over 90 draws
+  counts: {'easy': 38, 'medium': 25, 'hard': 27}
+  explore=90 exploit=0
+
+Learning trace, epsilon = 0.1, one reward per arm pulled
+  step 01  exploit  hard    Q[hard]=0.150  N={'easy': 0, 'medium': 0, 'hard': 1}
+  step 02  exploit  hard    Q[hard]=0.150  N={'easy': 0, 'medium': 0, 'hard': 2}
+  step 03  exploit  hard    Q[hard]=0.150  N={'easy': 0, 'medium': 0, 'hard': 3}
+  step 04  exploit  hard    Q[hard]=0.150  N={'easy': 0, 'medium': 0, 'hard': 4}
+  step 05  exploit  hard    Q[hard]=0.150  N={'easy': 0, 'medium': 0, 'hard': 5}
+  step 06  exploit  hard    Q[hard]=0.150  N={'easy': 0, 'medium': 0, 'hard': 6}
+  step 07  exploit  hard    Q[hard]=0.150  N={'easy': 0, 'medium': 0, 'hard': 7}
+  step 08  explore  easy    Q[easy]=0.350  N={'easy': 1, 'medium': 0, 'hard': 7}
+  step 09  exploit  easy    Q[easy]=0.350  N={'easy': 2, 'medium': 0, 'hard': 7}
+  step 10  exploit  easy    Q[easy]=0.350  N={'easy': 3, 'medium': 0, 'hard': 7}
+  step 11  explore  hard    Q[hard]=0.150  N={'easy': 3, 'medium': 0, 'hard': 8}
+  step 12  exploit  easy    Q[easy]=0.350  N={'easy': 4, 'medium': 0, 'hard': 8}
+  step 13  exploit  easy    Q[easy]=0.350  N={'easy': 5, 'medium': 0, 'hard': 8}
+  step 14  exploit  easy    Q[easy]=0.350  N={'easy': 6, 'medium': 0, 'hard': 8}
+  step 15  exploit  easy    Q[easy]=0.350  N={'easy': 7, 'medium': 0, 'hard': 8}
+  estimate ranking after 15 scripted pulls: ['easy', 'hard', 'medium']
+  Q = {'easy': 0.35, 'medium': 0.0, 'hard': 0.15}
+
+[exit code 0]

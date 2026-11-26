@@ -1,0 +1,10 @@
+Fixed difficulty check
+A session fails this script if its difficulty changes.
+
+easy    sessions=5  changes=0  mean_survival=8.00s  mean_health=96.0  mean_reward=0.484
+medium  sessions=5  changes=0  mean_survival=8.00s  mean_health=76.0  mean_reward=0.609
+hard    sessions=5  changes=0  mean_survival=6.44s  mean_health=0.0  mean_reward=0.016
+
+Fixed difficulty stayed on the selected level in every session.
+
+[exit code 0]

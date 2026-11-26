@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.15.2, pytest-9.2.0, pluggy-1.7.0
+rootdir: C:\Users\codyl\Projects\adaptive-dda-survival
+configfile: pytest.ini
+collected 36 items
+
+tests\test_bandit.py ........                                            [ 22%]
+tests\test_data_logger.py ..                                             [ 27%]
+tests\test_fixed_difficulty.py ...                                       [ 36%]
+tests\test_game_engine.py ........                                       [ 58%]
+tests\test_reward.py .....                                               [ 72%]
+tests\test_rule_based.py ..........                                      [100%]
+
+============================= 36 passed in 0.31s ==============================
+
+[exit code 0]
