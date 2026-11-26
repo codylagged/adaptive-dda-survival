@@ -1,0 +1,10 @@
+numpy>=2.0
+pandas>=2.2
+pytest>=8.0
+matplotlib>=3.8
+pillow>=10.0
+python-pptx>=1.0
+# pygame-ce provides `import pygame`. The plain pygame 2.6.1 wheel was not
+# available for this interpreter; the game imports pygame and does not
+# depend on a second copy of the library.
+pygame-ce>=2.5.3
