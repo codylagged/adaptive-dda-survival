@@ -1,0 +1,23 @@
+Comparative simulation (scripted survivor, not human players)
+sessions per cell: 24
+horizon seconds: 20.0
+bandit epsilon: 0.1
+
+experimental_mode dominant_difficulty  sessions  mean_survival  mean_health  mean_score  mean_kills  mean_reward  mean_changes
+           bandit                easy        11         19.618       70.545      69.545       4.818        0.700         0.364
+           bandit                hard        11          6.409        0.000       6.000       0.000       -0.105         0.000
+           bandit              medium         2         13.950        0.000      58.000       3.000        0.152         0.000
+            fixed                easy        24         20.000       80.000      68.333       4.833        0.739         0.000
+            fixed                hard        24          6.425        0.000       6.000       0.000       -0.105         0.000
+            fixed              medium        24         13.442        0.000      42.792       2.000        0.101         0.000
+       rule_based              medium        24         19.258        5.000      81.000       5.500        0.416         1.000
+
+Rule decision reasons: {'initial_difficulty': 24, 'stable': 106, 'recent_damage_high': 24, 'cooldown': 24, 'already_at_minimum': 57}
+Bandit Q: {'easy': 0.534361, 'medium': 0.426369, 'hard': 0.225381}
+Bandit N: {'easy': 50, 'medium': 11, 'hard': 23}
+Bandit explore/exploit: 7 / 77
+max difficulty changes inside fixed sessions: 0
+wrote C:\Users\codyl\Projects\adaptive-dda-survival\data\experiment_summary.json
+rows: 120
+
+[exit code 0]

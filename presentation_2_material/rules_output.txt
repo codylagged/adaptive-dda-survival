@@ -1,0 +1,23 @@
+Rule evaluation on constructed player states
+low health < 30%, high health >= 70%, cooldown 40 ticks
+
+[OK] low health on hard     hard   -> medium (health_below_threshold, changed=True)
+[OK] low health on medium   medium -> easy   (health_below_threshold, changed=True)
+[OK] damage spike           medium -> easy   (recent_damage_high, changed=True)
+[OK] strong performance     easy   -> medium (strong_performance, changed=True)
+[OK] cooldown               hard   -> hard   (cooldown, changed=False)
+[OK] middle of the road     medium -> medium (stable, changed=False)
+
+Live sessions with the scripted survivor
+seed 300: medium -> easy  changes=1  survival=18.8s  health=0.0  reasons=['stable', 'stable', 'stable', 'stable', 'stable', 'recent_damage_high', 'cooldown', 'already_at_minimum', 'already_at_minimum']
+seed 301: medium -> easy  changes=1  survival=20.0s  health=8.0  reasons=['stable', 'stable', 'stable', 'stable', 'recent_damage_high', 'cooldown', 'already_at_minimum', 'already_at_minimum', 'already_at_minimum']
+seed 302: medium -> easy  changes=1  survival=19.3s  health=0.0  reasons=['stable', 'stable', 'stable', 'stable', 'stable', 'recent_damage_high', 'cooldown', 'already_at_minimum', 'already_at_minimum']
+seed 303: medium -> easy  changes=1  survival=20.0s  health=8.0  reasons=['stable', 'stable', 'stable', 'stable', 'recent_damage_high', 'cooldown', 'already_at_minimum', 'already_at_minimum', 'already_at_minimum']
+seed 304: medium -> easy  changes=1  survival=19.2s  health=0.0  reasons=['stable', 'stable', 'stable', 'stable', 'recent_damage_high', 'cooldown', 'already_at_minimum', 'already_at_minimum', 'already_at_minimum']
+seed 305: medium -> easy  changes=1  survival=19.1s  health=0.0  reasons=['stable', 'stable', 'stable', 'stable', 'stable', 'recent_damage_high', 'cooldown', 'already_at_minimum', 'already_at_minimum']
+seed 306: medium -> easy  changes=1  survival=20.0s  health=4.0  reasons=['stable', 'stable', 'stable', 'stable', 'recent_damage_high', 'cooldown', 'already_at_minimum', 'already_at_minimum', 'already_at_minimum']
+seed 307: medium -> easy  changes=1  survival=20.0s  health=16.0  reasons=['stable', 'stable', 'stable', 'stable', 'recent_damage_high', 'cooldown', 'stable', 'already_at_minimum', 'already_at_minimum']
+
+mean difficulty changes over 8 sessions: 1.00
+
+[exit code 0]
