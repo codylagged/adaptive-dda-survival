@@ -1,0 +1,8 @@
+session_id,experimental_mode,selected_difficulty,initial_difficulty,dominant_difficulty,survival_time,final_score,remaining_health,enemies_defeated,difficulty_changes,reward,timestamp,game_over_reason,seed,ticks
+fixed-easy-0,fixed,easy,easy,easy,20.0,70,80.0,5,0,0.7439710791397314,2026-11-03T08:39:46,time_limit,1000,200
+fixed-easy-1,fixed,easy,easy,easy,20.0,60,80.0,4,0,0.7163473640664588,2026-11-03T08:39:46,time_limit,1001,200
+fixed-easy-2,fixed,easy,easy,easy,20.0,70,80.0,5,0,0.7439710791397314,2026-11-03T08:39:46,time_limit,1002,200
+fixed-medium-0,fixed,medium,medium,medium,20.0,65,70.0,4,0,0.71,2026-11-03T08:39:50,time_limit,1100,200
+fixed-hard-0,fixed,hard,hard,hard,18.5,55,45.0,3,0,0.65,2026-11-03T08:39:55,time_limit,1200,185
+rule-0,rule_based,medium,medium,medium,19.0,58,65.0,4,1,0.69,2026-11-03T08:40:10,time_limit,2000,190
+bandit-0,bandit,medium,easy,medium,20.0,62,72.0,4,1,0.71,2026-11-03T08:40:30,time_limit,3000,200
