@@ -1,0 +1,29 @@
+{
+  "fixed": {
+    "n": 72,
+    "survival_time": 20.0,
+    "final_score": 66.66666666666667,
+    "remaining_health": 80.0,
+    "enemies_defeated": 4.666666666666667,
+    "difficulty_changes": 0.0,
+    "reward": 0.7347631741153073
+  },
+  "rule_based": {
+    "n": 24,
+    "survival_time": 18.75,
+    "final_score": 54.166666666666664,
+    "remaining_health": 62.5,
+    "enemies_defeated": 3.5,
+    "difficulty_changes": 1.25,
+    "reward": 0.6812
+  },
+  "bandit": {
+    "n": 24,
+    "survival_time": 19.2,
+    "final_score": 61.0,
+    "remaining_health": 71.0,
+    "enemies_defeated": 4.1,
+    "difficulty_changes": 0.8,
+    "reward": 0.712
+  }
+}

@@ -5,7 +5,6 @@ import sys
 
 
 def test_frontend_imports_without_pandas():
-    # Drop any already-loaded heavy modules so the check is real.
     for name in list(sys.modules):
         if name.startswith("pandas") or name.startswith("matplotlib"):
             del sys.modules[name]
